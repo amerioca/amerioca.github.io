@@ -1,26 +1,38 @@
 body,
 html {
   height: 100%;
-  margin: 10;
+  margin: 0;
   padding: 20;
 }
 
 body {
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+div {
   background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.3) 0%,
       rgba(0, 0, 0, 0.8) 100%
     ),
     url('images/pexels-willian-santos-7443678.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 50%;
   color: white;
   text-align: center;
   /* font-size: 90px; */
 }
-
 .container {
   position: relative;
   overflow: hidden;
   width: 100%;
+  /* height: 100%; */
   padding-top: 56.25%;
 }
 
@@ -32,4 +44,8 @@ body {
   right: 0;
   width: 100%;
   height: 100%;
+}
+
+.whatsapp {
+  color: lightgreen;
 }
